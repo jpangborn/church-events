@@ -1,0 +1,8 @@
+{
+  "name": "church-events",
+  "description": "Church Events for Kirby",
+  "author": "Joshua Pangborn <joshua.pangborn@gmail.com>",
+  "version": "1.0",
+  "type": "kirby-plugin",
+  "license": "Church Events for Kirby End User License Agreement"
+}
