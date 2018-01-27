@@ -1,0 +1,10 @@
+title: Events
+deletable: false
+fields:
+  title:
+    label: Title
+    type:  text
+  calendar:
+    label: Calendar
+    type:  calendarboard
+    spoiler: "{{starttime}}-{{endtime}}: {{title}}"

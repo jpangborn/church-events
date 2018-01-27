@@ -1,0 +1,55 @@
+title: day
+pages: false
+files: false
+deletable: false
+fields:
+  title:
+    label: Day
+    type:  text
+    readonly: true
+  events:
+    label: Events
+    type: structure
+    modalsize: large
+    entry: >
+      {{title}}: {{starttime}}-{{endtime}}<br>{{location}} - {{category}}
+    fields:
+      title:
+        label: Name
+        type: text
+      starttime:
+        label: Start Time
+        type: time
+        format: 12
+        interval: 15
+        width: 1/2
+      endtime:
+        label: End Time
+        type: time
+        format: 12
+        interval: 15
+        width: 1/2
+      location:
+        label: Location
+        type: select
+        options:
+          church: Church
+          dayhouse: "Tricia Day's House"
+          panera: Panera Bread
+          morningpointelex: Morning Point of Lexington
+        width: 1/2
+      category:
+        label: Category
+        type: select
+        options:
+          general: General
+          women: "Women's Ministry"
+          men: "Men's Ministry"
+          children: "Children's Ministry"
+          youth: Youth Ministry
+          private: Private Event
+        width: 1/2
+      details:
+        label: Details
+        type: textarea
+        buttons: false
